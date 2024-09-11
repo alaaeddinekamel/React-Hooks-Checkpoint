@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 
 const NavFilms =()=>{
     return(
@@ -8,8 +9,9 @@ const NavFilms =()=>{
         <Container>
           <Navbar.Brand href="#home">AK7 Movies</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Movies</Nav.Link>
+       
+            <Link to={'/'}> <Nav.Link href="#home">Home</Nav.Link></Link>     
+         <Link to={'/Movies'}><Nav.Link href="#features">Movies</Nav.Link></Link>  
           </Nav>
         </Container>
       </Navbar>

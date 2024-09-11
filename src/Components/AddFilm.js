@@ -16,7 +16,7 @@ const AddFilm=({setMovies, movies})=>{
   const [rating,setRating]=useState(0) 
 
   const handleAdd=()=>{
-    setMovies([...movies,{title,description,posterURL,rating}])
+    setMovies([...movies,{title,description,posterURL,rating,id:Math.random()}])
     handleClose()
   }
 
